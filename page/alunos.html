@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="../img/ifes.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Alunos</title>
 </head>
 
@@ -27,91 +28,38 @@
                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
               </li>
             </ul>
-            <ul class="navbar-nav" style="gap: 10vh;">
+            <ul class="navbar-nav gap-5 py-lg-2 px-lg-5" >
+              <div class="d-none d-sm-block">
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      User
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Perfil</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="../index.html">Sair</a></li>
-                    </ul>
-                  </li>
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div> 
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    User
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../index.html">Sair</a></li>
+                  </ul>
+                </li>
             </ul>
           </div>
         </div>
       </nav>
     <main class="main">
-        <div class="container text-center">
+        <div class="container">
             <div class="row">
-              <div class="gap-5 d-flex my-5">
-                <h1 class="px-5 py-3 me-3 fs-6 fw-bolder">Aluno</h1>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-outline-dark btn-lg fw-bolder" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  Novo
-                </button>
-              </div>  
-              <div class="col-lg-12">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">Matricula</th>
-                      <th scope="col">Nome</th>
-                      <th scope="col">Curso</th>
-                      <th scope="col">Configuração</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>20181tadst0259</td>
-                      <td>Rodrigo do Prado</td>
-                      <td>Tecnologo analise de sistem</td>
-                      <td>
-                        <div className="gap-1 d-flex">
-                          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            editar
-                          </button>
-                          <button class="btn btn-outline-danger">deletar</button>  
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>20201tadst0259</td>
-                      <td>Gustavo Lima</td>
-                      <td>Tecnologo analise de sistem</td>
-                      <td>
-                        <div className="gap-1 d-flex">
-                          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            editar
-                          </button>
-                          <button class="btn btn-outline-danger">deletar</button>  
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>20201tadst3521</td>
-                      <td>Luan da Silva</td>
-                      <td>Tecnologo analise de sistem</td>
-                      <td>
-                        <div className="gap-1 d-flex">
-                          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            editar
-                          </button>
-                          <button class="btn btn-outline-danger">deletar</button>  
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="col-sm-8">
+                <div class="gap-5 d-sm-flex my-4">
+                  <h3 class="px-5 fw-bolder">Aluno</h3>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-dark fw-bolder" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Novo
+                  </button>
+                </div>  
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog">
@@ -145,6 +93,62 @@
                     </div>
                   </div>
                 </div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Matricula</th>
+                      <th scope="col">Nome</th>
+                      <th scope="col">Curso</th>
+                      <th scope="col">Configuração</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>20181tadst0259</td>
+                      <td>Rodrigo do Prado</td>
+                      <td>Tecnologo analise de sistem</td>
+                      <td>
+                        <div class="d-grid gap-1 d-sm-block">
+                          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            editar
+                          </button>
+                          <button class="btn btn-outline-danger">deletar</button>  
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>20201tadst0259</td>
+                      <td>Gustavo Lima</td>
+                      <td>Tecnologo analise de sistem</td>
+                      <td>
+                        <div class="d-grid gap-1 d-sm-block">
+                          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            editar
+                          </button>
+                          <button class="btn btn-outline-danger">deletar</button>  
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>20201tadst3521</td>
+                      <td>Luan da Silva</td>
+                      <td>Tecnologo analise de sistem</td>
+                      <td>
+                        <div class="d-grid gap-1 d-sm-block">
+                          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            editar
+                          </button>
+                          <button class="btn btn-outline-danger">deletar</button>  
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
     </main>

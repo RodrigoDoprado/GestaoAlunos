@@ -6765,52 +6765,6 @@ textarea.form-control-lg {
     mask-position: -200% 0%;
   }
 }
-#login .main {
-  display: flex;
-  justify-content: center;
-  margin: 20vh 0 0 0;
-  gap: 1.5vh;
-}
-
-#login .card {
-  text-align: center;
-  width: 20rem;
-  border-radius: 10px;
-  background-image: linear-gradient(100deg, rgb(56, 234, 75), black);
-}
-
-#login .card .card-head {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 5vh 10vh 0vh 10vh;
-}
-
-#login .card .card-head .card-img-top {
-  width: 45px;
-  height: 45px;
-}
-
-#login .card .card-head .card-title {
-  letter-spacing: 0.1em;
-}
-
-#login .card .card-body form input {
-  padding: 10px;
-  border-radius: 5px;
-  background-color: transparent;
-  border: 3px white solid;
-}
-
-#login .card .card-body form input:focus {
-  background-color: white;
-}
-
-#login .card .card-body form button {
-  border: none;
-  letter-spacing: 0.1em;
-  font-size: 1.2em;
-}
-
 .clearfix::after {
   display: block;
   clear: both;
@@ -11916,4 +11870,4 @@ textarea.form-control-lg {
   }
 }
 
-/*# sourceMappingURL=bootstrap.css.map */
+/*# sourceMappingURL=style.css.map */

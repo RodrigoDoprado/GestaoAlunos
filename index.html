@@ -3,31 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="./img/ifes.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Login</title>
 </head>
 
 <body id="login" class="bg-primary"> 
-    <main class="main">
+    <main class="main gap-3 d-flex justify-content-center"style="margin-top: 20vh;">
         <!-- <div class="container">
             <div class="row"> -->
                 <img class="d-none d-sm-block" src="./img/ifes.png">
-                    <div class="card text-light">
-                        <div class="card-head">
-                            <img class="card-img-top d-block d-sm-none" src="./img/ifes.png">
-                            <h1 class="card-title">Login</h1>
-                        </div>
+                    <div class="card text-light bg-secondary bg-opacity-50" style="width: 50vh; border-radius: 9px;">
                         <div id="message"></div>
-                        <div class="card-body">
-                            <form id="login-form">
-                                <div class="mb-3">
-                                    <input class="form-control" type="email" name="email" id="email" placeholder="Email:" required>
+                        <div class="card-body ">
+                            <form id="login-form" class="d-grid">
+                                <div class="card-head gap-3 d-inline-flex mb-4">
+                                    <img class="card-img-top d-block d-sm-none" src="./img/ifes.png" style="width:45px; height:45px">
+                                    <h1 class="card-title">Login</h1>
                                 </div>
                                 <div class="mb-3">
-                                    <input class="form-control" type="password" name="password" id="password" placeholder="Senha:" required>
+                                    <input class="form-control p-3" type="email" name="email" id="email" placeholder="Email:" required>
                                 </div>
-                                <button class="btn btn-outline-primary text-light" type="submit">Avança</button>
+                                <div class="mb-3">
+                                    <input class="form-control p-3" type="password" name="password" id="password" placeholder="Senha:" required>
+                                </div>
+                                <button class="btn btn-outline-secondary text-light px-3" type="submit">Avança</button>
                             </form>
                         </div>
                             <!-- <div class="card-footer"></div> -->

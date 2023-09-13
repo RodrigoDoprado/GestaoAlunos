@@ -49,8 +49,33 @@
     <main class="main">
         <div class="container text-center">
             <div class="row">
-              <h1 class="my-5">Alunos</h1>
               <div class="col-lg-12">
+                <div className="gap-5 d-flex mb-3">
+                  <h3 class="fw-bolder">Aluno</h3>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-dark btn-lg fw-bolder" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Novo
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <table class="table">
                   <thead>
                     <tr>
@@ -58,6 +83,7 @@
                       <th scope="col">Matricula</th>
                       <th scope="col">Nome</th>
                       <th scope="col">Curso</th>
+                      <th scope="col">Configuração</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -66,18 +92,36 @@
                       <td>20181tadst0259</td>
                       <td>Rodrigo do Prado</td>
                       <td>Tecnologo analise de sistem</td>
+                      <td>
+                        <div className="gap-1 d-flex">
+                          <button className="btn btn-outline-primary">editar</button>
+                          <button className="btn btn-outline-danger">deletar</button>  
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
                       <td>20201tadst0259</td>
                       <td>Gustavo Lima</td>
                       <td>Tecnologo analise de sistem</td>
+                      <td>
+                        <div className="gap-1 d-flex">
+                          <button className="btn btn-outline-primary">editar</button>
+                          <button className="btn btn-outline-danger">deletar</button>  
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
                       <td>20201tadst3521</td>
                       <td>Luan da Silva</td>
                       <td>Tecnologo analise de sistem</td>
+                      <td>
+                        <div className="gap-1 d-flex">
+                          <button className="btn btn-outline-primary">editar</button>
+                          <button className="btn btn-outline-danger">deletar</button>  
+                        </div>
+                      </td>
                     </tr>
                   </tbody>
                 </table>

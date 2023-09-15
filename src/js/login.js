@@ -8,7 +8,7 @@ loginForm.addEventListener("submit", function (e) {
     const password = document.getElementById("password").value;
 
     if (email != "" && password != "") {
-        window.location = 'page/dashboard.html';
+        window.location = './src/page/dashboard.html';
     } else {
         message.innerHTML = "Credenciais inválidas. Tente novamente.";
     }

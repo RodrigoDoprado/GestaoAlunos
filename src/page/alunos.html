@@ -76,10 +76,18 @@
                       <div class="modal-body">
                         <form>
                           <div class="mb-3">
-                            <input class="border border-primary form-control p-3" type="email" name="email" id="email" placeholder="Email:" required>
+                            <input class="border border-primary form-control p-3" type="text" name="fristName" id="fristName" placeholder="Nome:" required>
                         </div>
                         <div class="mb-3">
-                            <input class="border border-primary form-control p-3" type="password" name="password" id="password" placeholder="Senha:" required>
+                            <input class="border border-primary form-control p-3" type="text" name="Course" id="Course" placeholder="Curso:" required>
+                        </div>
+                        <div class="mb-3">
+                          <select class="border border-primary form-select" aria-label="Default select example" required>
+                            <option selected>Turno</option>
+                            <option value="1">Matutino</option>
+                            <option value="2">Vespertino</option>
+                            <option value="3">Noturno</option>
+                          </select>
                         </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
